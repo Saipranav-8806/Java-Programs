@@ -1,0 +1,63 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class Wipro {
+
+	public static void main(String[] args) {
+		List<String> inp = new ArrayList<>();
+		List<String> inp1 = new ArrayList<>();
+		
+		inp.add("eat");
+		inp.add("get");
+		inp.add("ate");
+		inp.add("silent");
+		inp.add("listen");
+		
+		for(int i=0;i<inp.size();i++) {
+			String temp1 = inp.get(i);
+			char[]  a1 = temp1.toCharArray();
+			Arrays.sort(a1);
+			
+			String a2 = String.valueOf(a1);
+			inp1.add(a2);
+			
+		}
+		
+		System.out.print(equal(inp,inp1));
+		
+	}
+	
+	static List<List<String>> equal(List<String> inp, List<String> inp1) {	
+		List<List<String>> res = new ArrayList<>();
+		List<String> temp = new ArrayList<String>();
+		
+		for(int i = 0; i<inp.size();i++) {
+			List<String> res1 =  new ArrayList<>();
+				for(int j = i+1;j<inp.size();j++) {
+				
+				String a1 = inp1.get(i);
+				String a2 = inp1.get(j);
+				
+				
+				if(a1.equals(a2) ) {
+					
+					res1.add(inp.get(i));
+					res1.add(inp.get(j));
+					temp.add(inp.get(j));
+				}	
+				else if(!inp.contains(inp.get(j))) {
+					res1.add(inp.get(j));
+				}
+			}
+			res.add(res1);
+		}
+		System.out.println("s:" + temp);
+		return res;
+	}
+
+}
+
+
+
+

@@ -1,0 +1,23 @@
+package java_app1;
+
+import java.util.Scanner;
+
+public class Prime_number_36 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the Number:");
+		int num = sc.nextInt();
+		int count = 0; 
+		for(int i=1; i<=(num/2); i++) {
+			if (num/i!=0) count++;
+				
+		}
+		System.out.println(count);
+		if (count==1) System.out.println("Prime Number");
+		else System.out.println("Not a Prime Number");
+		// TODO Auto-generated method stub
+
+	}
+
+}

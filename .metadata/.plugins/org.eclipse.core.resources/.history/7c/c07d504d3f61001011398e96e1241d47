@@ -1,0 +1,15 @@
+import java.util.Arrays;
+
+public class Wipro {
+
+	public static void main(String[] args) {
+		String a = "silent";
+		String b = "listen";
+		char[] charArray = a.toCharArray();
+		Arrays.sort(charArray);
+		System.out.println(charArray);
+		
+
+	}
+
+}

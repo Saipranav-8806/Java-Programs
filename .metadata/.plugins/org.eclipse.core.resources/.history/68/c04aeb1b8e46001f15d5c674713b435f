@@ -1,0 +1,27 @@
+/*
+ 
+*	 *
+**  **
+******
+******
+**  **
+*    *
+
+
+
+            
+
+*/
+
+public class ButterFlyStar {
+	public static void pattern(int num) {
+		for(int i =1;i<=num*2;i++) {
+			for(int j =0;i<=i;j++) {
+				System.out.print("*");
+			}
+		}
+	}
+	public static void main(String[] args) {
+		pattern(3);		
+	}
+}

@@ -1,0 +1,25 @@
+import java.util.Scanner;
+/*****
+ *   *
+ *   *
+ *****
+ */
+public class SquareHallow {
+	public static void main (String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter no: ");
+		int num = sc.nextInt();
+//		Outer loop for Rows
+		for (int i = 1; i<=num;i++) {
+			System.out.println(i);
+//			Inner Loop For Spaces
+			for (int j = 0;j>=num;j++ ) {
+				if (1== 0 || j == 0 || i ==num)
+					System.out.print("*");
+				else System.out.print(" ");
+			}
+		}
+		
+	}
+
+}

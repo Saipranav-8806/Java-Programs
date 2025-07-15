@@ -1,0 +1,65 @@
+/*
+ 
+*    * ; 1,4,1
+**  ** ; 2,2,2
+****** ; 6
+****** ; 6
+**  ** ; 2,2,2
+*    * ; 1;4;1
+
+*/
+
+
+public class ButterFlyStar {
+	public static void printAny2(int sI, int eI, String m) {
+		for (int i=sI; i<=eI; i++) {
+			System.out.print(m);
+		}
+	}
+	public static void printAny3(int sI, int eI, String m) {
+		for (int i=sI; i>=eI; i--) {
+			System.out.print(m);
+		}
+	}
+	public static void pattern(int num) {
+		for (int i = 1; i < num * 2; i++) {
+			if (i < num) {
+				printAny2(1,i,"*");
+//				
+//				Spaces
+				printAny2(1, ((num * 2) - 2) / i, "p");
+//				for (int j = 1; j <= ((num * 2) - 2) / i; j++) {
+//					System.out.print("p");
+//				}
+				printAny2(1, i, "*");
+//				for (int j = 1; j <= i; j++) {
+//					System.out.print("*");	
+//				}
+			}
+			if(i==num) {
+				for(int n =1;n<=2;n++) {
+					printAny2(0, num*2, "*");
+//					for(int j=0;j<(num*2);j++) {
+//						System.out.print("*");
+//					}
+					System.out.println();
+				}
+			}
+//			else {
+//				printAny3(i, 1, "*");
+//				printAny3((num * 2) - 2 / i, 1, "p");
+//				printAny3(i, 1, "*");
+//				
+//			}
+			
+				System.out.println();
+				
+
+
+		}
+	}
+
+	public static void main(String[] args) {
+		pattern(3);
+	}
+}

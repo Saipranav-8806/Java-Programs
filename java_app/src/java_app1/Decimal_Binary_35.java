@@ -1,0 +1,22 @@
+package java_app1;
+
+import java.util.Scanner;
+
+public class Decimal_Binary_35 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the number: ");
+		int num = sc.nextInt();
+		String x = ""  ;
+		while(num>0) {
+			int a = num%2;
+			x = x+a;
+			num = num /2;
+		}
+		System.out.println("Binary Value of: " + num + x);
+		// TODO Auto-generated method stub
+
+	}
+
+}

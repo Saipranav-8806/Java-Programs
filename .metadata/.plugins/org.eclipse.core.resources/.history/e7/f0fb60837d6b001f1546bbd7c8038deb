@@ -1,0 +1,27 @@
+package java_app1;
+
+import java.util.Scanner;
+
+public class Primenumber_Range {
+	public static void main(String[] args) {
+		int count = 0;
+		System.out.print("Enter Start Number: ");
+		Scanner sc = new Scanner(System.in);
+		int s = sc.nextInt();
+		System.out.print("Enter End Number");
+		int e = sc.nextInt();
+		
+		for(int i =  s;i<=e;i++) {
+			String q = isPrime(i);	
+			System.out.println(q);
+		}
+		
+	}
+	static String isPrime(int a) {
+		for(int j=2 ;j<a;j++) {
+			if(a%j==0) return a + "Not a Prime";
+			
+		}
+		return a + "Its a Prime";
+	}
+}

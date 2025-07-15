@@ -1,0 +1,60 @@
+/*
+    *
+   * *
+  * * *
+ * * * * 
+  * * *
+   * *
+    *  
+ */
+
+import java.util.Scanner;
+
+public class Diamond {
+	public static void pattern(int num) {
+		int space = num*2;
+//		Outer Loop
+		for(int i = 1;i<=space;i++) {
+			
+			
+//			Inner Loop condition
+			if(i<=num) {
+//				Up Spaces
+				for(int j = 1; j<=num-i;j++) {
+					System.out.print(" ");
+				}
+//				Up Stars
+				for(int j =1;j<=i;j++) {
+					System.out.print("* ");
+				}
+			}
+			
+			
+			else {
+				
+//				Down Spaces
+				for(int j =1 ;j<=i-num;j++) {
+					System.out.print(" ");
+				}
+//				Down Stars
+				for(int j = 1; j<=space-i;j++ ) {
+					System.out.print("* ");
+				}
+
+				
+				
+			}
+			
+			
+			System.out.println();
+		}
+		
+	}
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the Number");
+		int num = sc.nextInt();
+		pattern(num);
+	}
+}
+

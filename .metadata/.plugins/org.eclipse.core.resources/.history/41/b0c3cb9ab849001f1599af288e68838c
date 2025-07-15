@@ -1,0 +1,43 @@
+/*
+
+* * * *
+* * * 
+* *
+*
+* *
+* * *
+* * * *
+   
+*/
+
+import java.util.Scanner;
+
+public class K {
+	public static void pattern(int num) {
+		for(int i =1;i<num*2;i++) {
+			if(i<=num) {
+				for(int j=i;j<=num;j++) {
+					System.out.print("* ");
+				}
+				
+			}
+			else {
+				for(int j = num*2;j<=num-1;j--) {
+					System.out.print("* ");
+				}
+			}
+			
+			System.out.println();
+			
+		}
+		
+	}
+	public static void main(String[] args) {
+//		Scanner sc = new Scanner(System.in);
+//		System.out.println("Enyer the number: ");
+//		int num = sc.nextInt();
+		pattern(4);
+		
+	}
+
+}

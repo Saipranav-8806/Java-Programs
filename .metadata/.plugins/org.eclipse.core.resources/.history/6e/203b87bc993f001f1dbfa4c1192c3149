@@ -1,0 +1,21 @@
+package java_app1;
+
+import java.util.*;
+
+public class Decimal_Binary_35 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int num = sc.nextInt();
+		int x , n ;
+		while(num>0) {
+			int a = num%2;
+			x = x+a;
+			n=n\2;
+		}
+		System.out.println(x);
+		// TODO Auto-generated method stub
+
+	}
+
+}

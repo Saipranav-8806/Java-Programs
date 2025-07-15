@@ -1,0 +1,28 @@
+package java_app1;
+
+import java.util.Scanner;
+
+public class Armstrong_40 {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter the Number: ");
+		int num = sc.nextInt();
+		while(num>0) {
+			int a = num%10;
+			System.out.println(a);
+			num = num/10;
+			System.out.println(num);
+		}
+		
+		// TODO Auto-generated method stub
+
+	}
+
+		
+				
+	}
+	
+
+}

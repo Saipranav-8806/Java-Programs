@@ -1,0 +1,36 @@
+/*
+
+* * * * *(5)
+ *     *8
+  *   *7
+   * *6
+    *5
+    
+*/
+
+package java_app1;
+
+public class HollowReverseTriangle {
+	public static void main(String[] args) {
+		int num=5;
+		for(int i = 1;i<=num;i++) {
+			if(i>1) {
+				for(int j =1;j<i;j++) {
+					System.out.print("0");
+				}
+				for(int j = i;j<=2*i-1;j++) {
+					if(j==i || j<=(2*i-1)) {
+						System.out.print("*");
+					}
+					else {
+						System.out.print(" ");
+					}
+				}
+				System.out.println();
+			}
+			
+		}
+		
+	}
+
+}

@@ -1,0 +1,13 @@
+
+public class Wipro {
+
+	public static void main(String[] args) {
+		String a = "silent";
+		String b = "listen";
+		char[] charArray = a.toCharArray();
+		System.out.println(charArray);
+		
+
+	}
+
+}

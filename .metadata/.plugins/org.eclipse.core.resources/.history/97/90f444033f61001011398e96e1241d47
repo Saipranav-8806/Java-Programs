@@ -1,0 +1,11 @@
+
+public class Wipro {
+
+	public static void main(String[] args) {
+		String a = "silent";
+		String b = "listen";
+		System.out.println(a.toUpperCase());
+
+	}
+
+}

@@ -1,0 +1,26 @@
+package java_app1;
+
+import java.util.List;
+
+public class ListCompare {
+
+	public static void main(String[] args) {
+		String[] l1 = {"Risk Domain / 2LOD"," Account Capability", "Applicable Organizational Area: Product Area", "Acknowledgement Audience", "Policy State", "Policy Advisory", "Sub Applicable Organization Area", "Owning Organizational Area: Bets", "Deprecation Date", "Subject Matter Expert", "Policy Category", "Watchlist", "Effective Date", "Owner", "Description", "All Internal Policy Viewers", "Title", "Manager", "Policy Level", "Executive Sponsor", "Sub Owning Organization Area", "Last Review Date", "Policy Text", "Relevant Trainings", "Provenance", "Recertification Frequency", "Regulated Processing Classification", "Administrator", "Criticality", "Effective To Date", "Overall Effectiveness Rating", "Compliance Approver", "Applicable Organizational Area: Risk 2LOD", "Applicable Organizational Area: Bets", "Legal Approver", "Source ID","Owning Organizational Area: Risk 2LOD", "Recertification Date", "Age Applicability", "Owning Organizational Area: Product Area"};
+		String[] l2 = {"Account Capability", "Acknowledgement Audience", "Administrator", "Age Applicability", "All Internal Policy Viewers", "Applicable Organizational Area: Bets", "Applicable Organizational Area: Product Area", "Applicable Organizational Area: Risk 2LOD", "Compliance Approver", "Criticality", "Deprecation Date", "Description", "Effective Date", "Effective To Date", "Executive Sponsor", "Last Review Date", "Legal Approver", "Manager", "Overall Effectiveness Rating", "Owner", "Owning Organizational Area: Bets", "Owning Organizational Area: Product Area", "Owning Organizational Area: Risk 2LOD", "Policy Advisory", "Policy Category", "Policy Level", "Policy State", "Provenance", "Recertification Date", "Recertification Frequency", "Regulated Processing Classification", "Relevant Trainings", "Risk Domain / 2LOD", "Source ID", "Sub Applicable Organization Area", "Sub Owning Organization Area", "Subject Matter Expert", "Title","Watchlist"};
+
+		String[] l11 = {};
+		String[] l22 = {};
+		
+		for(String i : l1) {
+			for(String j : l2) {
+				if (i!= j){
+					System.out.println(i);
+				}
+			}
+			
+		}
+		
+		
+	}
+
+}

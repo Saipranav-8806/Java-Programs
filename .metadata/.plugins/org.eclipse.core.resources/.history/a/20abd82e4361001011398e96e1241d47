@@ -1,0 +1,29 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class Wipro {
+
+	public static void main(String[] args) {
+		
+//		ate eat get listen silent 
+		List<String> inp = new ArrayList<>();
+		inp.add("eat");
+		inp.add("get");
+		inp.add("ate");
+		inp.add("silent");
+		inp.add("listen");
+		System.out.print(equal(inp));
+	}
+	
+	static List<String> equal(List<String> inp) {
+//		System.out.println(inp);
+		return inp;
+		
+	}
+
+}
+
+
+
+

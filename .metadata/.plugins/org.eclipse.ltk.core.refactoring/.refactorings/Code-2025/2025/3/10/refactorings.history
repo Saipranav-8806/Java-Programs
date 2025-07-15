@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Code-2025/src/SecondLargest&apos; to &apos;SecondLargest.java&apos;" description="Rename resource &apos;SecondLargest&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/SecondLargest" name="SecondLargest.java" stamp="1741195046698" updateReferences="true"/>
+</session>

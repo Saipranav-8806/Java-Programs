@@ -1,0 +1,42 @@
+
+
+
+/*
+     * 		5,*
+    * *5	4*1*
+   *   *4	3*3*
+  *     *3
+ *       *2
+*         *1
+ *       *
+  *     *
+   *   *
+    * *
+     *
+*/
+
+
+package java_app1;
+
+public class HallowDiamondPyramid {
+
+	public static void main(String[] args) {
+		int num =6;
+		for(int i =1;i<=num;i++) {
+			for(int j = i;j<num;j++) {
+				System.out.print("p");
+			}
+			for(int j =(i*2-1);j>0;j--) {
+				if(j==i||j==i*2-1) {
+					System.out.print("*");
+				}
+				else System.out.print(" ");
+				
+			}
+			System.out.println();
+		}
+		
+		// TODO Auto-generated method stub
+
+	}
+}

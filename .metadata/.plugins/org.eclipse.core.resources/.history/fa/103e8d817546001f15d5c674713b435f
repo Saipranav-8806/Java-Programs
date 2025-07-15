@@ -1,0 +1,35 @@
+/*
+
+ 		* 
+      * *
+    * * *
+  * * * *
+* * * * * 
+
+*/
+
+import java.util.Scanner;
+
+public class LeftHalf {
+	public static void pattern(int num) {
+//		Outer Loop
+		for(int i =0;i<num;i++) {
+//			Inner Loop For Spaces
+			for(int j =0 ;j<num;j++) {
+				System.out.print("p");
+			}
+			for(int j = i;j>0;j--) {
+				System.out.print("* ");
+			}
+			System.out.println();
+		}
+		
+	}
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter the Number:");
+		int num =  sc.nextInt();
+		pattern(num);		
+	}
+
+}

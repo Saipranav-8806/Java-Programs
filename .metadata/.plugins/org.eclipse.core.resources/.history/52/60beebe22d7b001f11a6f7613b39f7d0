@@ -1,0 +1,27 @@
+package java_app1;
+
+import java.util.Scanner;
+
+public class Natural_Number_Recursion_47 {
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		int num = sc.nextInt();
+		method(0,num);
+		System.out.println("\n" + method(0,num));
+
+	}
+
+	static int method(int start, int num) {
+		start++;
+		if(start==num) return 0;
+		else {
+			
+			System.out.print(start);
+			method(start, num);
+		}
+		return 0 ;
+		
+
+	}
+
+}

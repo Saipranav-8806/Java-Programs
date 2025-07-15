@@ -1,0 +1,14 @@
+package java_app1;
+
+import java.util.Scanner;
+
+public class Prime_number_36 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println();
+		// TODO Auto-generated method stub
+
+	}
+
+}

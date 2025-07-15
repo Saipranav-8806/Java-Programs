@@ -1,0 +1,29 @@
+//          1 
+//        2 1 2 
+//      3 2 1 2 3 
+//    4 3 2 1 2 3 4 
+//  5 4 3 2 1 2 3 4 5 
+//6 5 4 3 2 1 2 3 4 5 6
+import java.util.Scanner;
+public class PascalTriangle2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		System.out.println("Enter the Number:");
+		
+		Scanner sc = new Scanner(System.in);
+		int num = sc.nextInt();
+		int tempnum = num;
+		while(tempnum>0) {
+			System.out.println("ko");
+			tempnum--;
+		}
+//		tempnum++;
+		
+		
+		
+		
+	}
+
+}

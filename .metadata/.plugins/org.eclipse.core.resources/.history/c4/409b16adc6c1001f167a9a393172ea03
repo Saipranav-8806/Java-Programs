@@ -1,0 +1,33 @@
+package java_app1;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class ListCompare {
+
+	public static void main(String[] args) {
+		Punch p = new Punch();
+		System.out.println(p.brandName());
+		System.out.println(p.subBrandName());
+	}
+
+}
+
+
+abstract class Tata {
+	
+	public abstract void subBrandName();
+	public void brandName() {
+		System.out.println("Tata");
+	}
+}
+
+class Punch extends Tata {
+
+	@Override
+	public void subBrandName() {
+		System.out.println("Punch");
+		
+	}
+}

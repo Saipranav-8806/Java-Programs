@@ -1,0 +1,40 @@
+public class Intrest_Calucator {
+
+	public static void main(String[] args) {
+		int amount = 100000;
+		int intrestRate = 7;
+		int year = 5;
+		int waitingYear = 5;
+		Calucate(amount, waitingYear, intrestRate,waitingYear);
+	}
+
+
+
+
+
+	public static void Calucate(int amount, int year, int intrestRate,int waitingYear) {
+		double totalAmount = 0;
+		double initialAmount = 0;
+		for (int i = 0; i < year; i++) {
+			initialAmount = totalAmount + amount;
+			double rateOfIntrest = initialAmount * intrestRate / 100;
+			totalAmount = initialAmount+rateOfIntrest;
+
+//			System.out.println(i + "year: " + totalAmount);
+		}
+		CalucateWating(totalAmount, waitingYear, intrestRate);
+	}
+	public static void CalucateWating(double totalAmount, int waitingYear, int intrestRate) {
+		double WaitingIntrest = 0 ;
+		
+		
+		for(int i =1;i<=waitingYear;i++) {
+			double intrest = totalAmount*intrestRate/100;
+			totalAmount = totalAmount + intrest;
+				
+		}
+		System.out.println(totalAmount);
+//		System.out.println(": "+WaitingIntrest);
+	}
+	
+}

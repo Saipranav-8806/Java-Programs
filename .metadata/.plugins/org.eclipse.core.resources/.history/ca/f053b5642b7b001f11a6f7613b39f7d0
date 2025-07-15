@@ -1,0 +1,24 @@
+package java_app1;
+
+import java.util.Scanner;
+
+public class Natural_Number_Recursion_47 {
+	public static void main(String[] args) {
+		Scanner sc =  new Scanner(System.in);
+		int num = sc.nextInt();
+		Natural a = new Natural(num);
+		
+
+	}
+			
+}
+class Natural {
+	Natural(int num){
+		for(int i =1;i<=num;i++) {
+			System.out.println(i);
+		}
+	}
+	
+}
+	
+

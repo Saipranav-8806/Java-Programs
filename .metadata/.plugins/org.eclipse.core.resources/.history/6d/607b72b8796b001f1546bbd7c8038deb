@@ -1,0 +1,19 @@
+package java_app1;
+
+import java.util.Scanner;
+
+public class Primenumber_Range {
+	public static void main(String[] args) {
+		int count = 0;
+		System.out.print("Enter Start Number: ");
+		Scanner sc = new Scanner(System.in);
+		int s = sc.nextInt();
+		System.out.print("Enter End Number");
+		int e = sc.nextInt();
+		
+		for(int i =s; i<e;i++) {
+			System.out.println(i);
+		}
+
+	}
+}

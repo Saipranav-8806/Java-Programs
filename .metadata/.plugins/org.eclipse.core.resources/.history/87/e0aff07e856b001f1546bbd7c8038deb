@@ -1,0 +1,29 @@
+package java_app1;
+
+import java.util.Scanner;
+
+public class Armstrong_40 {
+
+	public static void main(String[] args) {
+		
+		Scanner sc = new Scanner(System.in);
+		int add = 0;
+		System.out.print("Enter the Number: ");
+		int num = sc.nextInt();
+		while(num>0) {
+			int a = num%10;
+			add =  add + (int) Math.pow(a, 3);
+			num = num/10;
+			
+			System.out.println(add);
+		}
+		if(num==add) System.out.println("ArmStrong Number");
+		else System.out.println("Not a ArmStrong Number ");
+		
+		// TODO Auto-generated method stub
+
+	}
+
+		
+				
+}

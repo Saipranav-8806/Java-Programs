@@ -1,0 +1,40 @@
+package java_app1;
+
+import java.util.Scanner;
+
+public class Arthmetic_operators_32 {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter Value1:");
+		int value1 = sc.nextInt();
+		System.out.println("Enter Value2");
+		int value2 = sc.nextInt();
+		
+		while(true) {
+			System.out.println(">1 - Addition \n>2 - Subtraction \n>3 - Multiplication \n>4 - Division");
+			int operation = sc.nextInt();
+			switch(operation) {
+			case 1:
+				System.out.println(value1 +" + " +value2 +"=" +value1+value2);
+				break;
+			case 2:
+				System.out.println(value1 +" - " +value2 +"=" +value1-value2);
+				break;
+			case 3:
+				System.out.println(value1 +" * " +value2 +"=" +value1*value2);
+				break;
+			case 4:
+				System.out.println(value1 +" / " +value2 +"=" +value1	/ value2);
+				break;
+			default:
+				System.exit(0)
+					
+			}
+		}
+		
+		// TODO Auto-generated method stub
+
+	}
+
+}

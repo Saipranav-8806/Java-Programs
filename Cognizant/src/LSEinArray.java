@@ -1,0 +1,37 @@
+import java.util.*;
+public class LSEinArray {
+
+	public static void main(String[] args) {
+		ArrayList<Integer> A = new ArrayList<>();
+		A.add(1);
+		A.add(4);
+		A.add(2);
+		A.add(9);
+		A.add(6);
+		A.add(5);
+		A.add(2);
+		
+		element(A);
+		
+	}
+	
+	public static void element(ArrayList<Integer> a) {
+		int min = Integer.MAX_VALUE;
+
+//		int min = a.get(1);
+//		int max = a.get(1);
+		int max = Integer.MIN_VALUE;
+		for(int temp : a) {
+			
+			if(temp>max) {
+				max =temp;
+			}
+			
+			else if(temp<min){
+				min = temp;
+			}
+		}
+		System.out.println("Min Value is: " + min);
+		System.out.println("Max Value is: " + max);
+		}
+	}

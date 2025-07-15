@@ -1,0 +1,34 @@
+package java_app1;
+
+import java.util.Scanner;
+
+public class ArmstrongRange {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter Start Number");
+		int s = sc.nextInt();
+		System.out.println("Enter End Number");
+		int e = sc.nextInt();
+		for(int i = s;i<=e;i++) {
+			System.out.println(Arm(i));	
+		}
+		// TODO Auto-generated method stub
+
+	}
+	
+	static String Arm(int num) {
+		int num1 = num;
+		int add=0;
+		while(num1>0) {
+			int a = num1%10;
+			add = add + (int) ( Math.pow(a,3));
+			num1=num1/10;
+		}
+		if(num == add) return num + " ArmStrong";
+		else return num + " Not An ArmStrong";	
+		
+		
+	}
+
+}

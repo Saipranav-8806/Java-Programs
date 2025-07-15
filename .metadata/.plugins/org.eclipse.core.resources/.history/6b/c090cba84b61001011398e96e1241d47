@@ -1,0 +1,73 @@
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+public class Wipro {
+
+	public static void main(String[] args) {
+		List<String> inp = new ArrayList<>();
+		List<String> inp1 = new ArrayList<>();
+		
+		inp.add("eat");
+		inp.add("get");
+		inp.add("ate");
+		inp.add("silent");
+		inp.add("listen");
+		
+		for(int i=0;i<inp.size();i++) {
+			String temp1 = inp.get(i);
+			char[]  a1 = temp1.toCharArray();
+			Arrays.sort(a1);
+			String a2 = a1.toString();
+			
+			inp1.add(a2);
+		}
+		
+		System.out.print(equal(inp,inp1));
+		
+		
+		
+		
+		
+	}
+	
+	static List<String> equal(List<String> inp, List<String> inp1) {
+		String temp1 = null;
+		String temp2 = null;
+		List<String> res = null;
+		
+		for(int i = 0; i<inp1.size();i++) {
+			for(int j = i+1;j<inp1.size();j++) {
+				
+				String a1 = inp1.get(i);
+				String a2 = inp1.get(j);
+				
+				
+//				System.out.println(a1);
+				if(a1.equals(a2)) {
+					
+					System.out.print(a1);
+					System.out.print("-");
+					System.out.println(a2);
+				}
+				
+				
+				else System.out.println("No");
+			}
+			
+		}
+		
+		
+		
+		
+		
+		
+		return inp;
+		
+	}
+
+}
+
+
+
+

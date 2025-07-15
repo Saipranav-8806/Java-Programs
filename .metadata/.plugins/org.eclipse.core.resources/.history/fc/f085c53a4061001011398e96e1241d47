@@ -1,0 +1,21 @@
+import java.util.Arrays;
+
+public class Wipro {
+
+	public static void main(String[] args) {
+		String a = "silent";
+		String b = "listen";
+		char[] a1 = a.toCharArray();
+		Arrays.sort(a1);
+		
+		char[] a2 = a.toCharArray();
+		Arrays.sort(a2);
+		
+		if(a1.equals(a2) ) {
+			System.out.println("yes");
+		}
+		
+
+	}
+
+}
